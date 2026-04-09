@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4  # Updated to v4
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
@@ -15,7 +15,7 @@ jobs:
           repository_root: .
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4  # Fixed the Deprecation Error here
         with:
           name: GradeArchitect-Package
           path: bin/*.apk
