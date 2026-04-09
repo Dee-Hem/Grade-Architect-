@@ -8,12 +8,12 @@ version = 0.1
 orientation = portrait
 
 # REQUIREMENTS 
-requirements = python3,kivy==2.3.1,fpdf,pillow
+requirements = python3,kivy==2.3.1,fpdf,pillow,six
 
 # BRANDING
-icon.filename = %(source.dir)s/icon.png
-presplash.filename = %(source.dir)s/icon.png
-android.presplash_color = #0f172a
+#icon.filename = %(source.dir)s/icon.png
+#presplash.filename = %(source.dir)s/icon.png
+#android.presplash_color = #0f172a
 
 # PERMISSIONS 
 android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE, INTERNET
