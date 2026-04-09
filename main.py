@@ -136,8 +136,7 @@ class GradeArchitect(App):
             u, g = r['units'], r['grade']
             p = self.grade_points.get(g, 0)
             pts_t += (p * u); units_t += u
-            txt += f"[color=d4af37][b]{r['sem']}[/b][/color] | {r['name']} | [b]{g}[/b] ({u}U)
-"
+            txt += f"[color=d4af37][b]{r['sem']}[/b][/color] | {r['name']} | [b]{g}[/b] ({u}U)\n"
         cgpa = pts_t / units_t if units_t > 0 else 0
         self.cgpa_label.text = "{:.2f}".format(cgpa)
         self.honor_label.text = "CLASS: " + self.get_honors(cgpa)
